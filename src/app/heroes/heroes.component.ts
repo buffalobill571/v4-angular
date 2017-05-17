@@ -2,7 +2,6 @@ import { Component, OnInit }  from '@angular/core';
 import { Router }             from '@angular/router';
 
 import { Hero }               from '../objects/hero';
-import { HEROES }             from '../objects/mock-heroes';
 import { HeroService }        from '../services/hero.service';
 
 
@@ -13,7 +12,7 @@ import { HeroService }        from '../services/hero.service';
 })
 export class HeroesComponent implements OnInit {
 
-  heroes: Hero[];
+  heroes: Hero[] = [];
   selectedHero: Hero;
 
   constructor(
